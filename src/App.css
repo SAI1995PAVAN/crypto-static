@@ -11,9 +11,6 @@
   width:76.9rem;
   height:13rem;
   margin:auto;
-  /* position:absolute;
-  top:167.56rem;
-  left:6.62rem; */
   display:flex;
   flex-direction: row;
 }
@@ -32,16 +29,16 @@
 .our-partners{
   background: linear-gradient(130deg, #1A71F2 0%, #791AF2 100%), url('./assets/images/our-partners-background.png'), lightgray -128.229px 3.235px / 243.549% 182.662% no-repeat;
 background-blend-mode: color, normal;
-/* filter: blur(2.694999933242798px); */
+
 background-clip: text;
--webkit-background-clip: text; /* For older versions of WebKit browsers */
+-webkit-background-clip: text;
   color: transparent;
 text-align: right;
 font-family: 'Inter', sans-serif;
 font-size: 1.125rem;
 font-style: normal;
 font-weight: 700;
-line-height: 175%; /* 1.96875rem */
+line-height: 175%;
 text-transform: uppercase;
 }
 
@@ -53,7 +50,7 @@ font-family: Inter;
 font-size: 2.5rem;
 font-style: normal;
 font-weight: 300;
-line-height: 150%; /* 3.75rem */
+line-height: 150%;
 text-transform: capitalize;
 height:7.5rem
 }
@@ -64,11 +61,9 @@ height:7.5rem
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 150%; /* 3.75rem */
+  line-height: 150%;
   text-transform: uppercase;
-  color: transparent; /* Set text color to transparent */
-  
-  /* Apply background color to the whole span */
+  color: transparent;
   background: linear-gradient(130deg, #1A71F2 0%, #791AF2 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -130,32 +125,25 @@ height:2rem;
  
 }
 
-@media screen and (max-width:780){
-  .details{
-   width:500px
-  }
-   /* .partners-component{
-   width:100%;
-   flex-direction: column;
-   height: auto;
-   justify-content: center;
-   align-items: center;
-   } */
-
-   .partner-names{
-    width:100%;
+@media screen and (max-width:720px){
+  .partner-names{
     flex-direction: column;
-   }
-
-   .partner{
+    height:auto;
+    align-items:center;
     width:100%
-   }
- 
-  .details-heading{
-    width:80%
   }
 
-  .details-sub-heading{
-    width:80%
+  .partner{
+    height:1rem;
+    padding:1.25rem 10rem
   }
+
+  .details,.details-heading,.details-sub-heading{
+    width:100%;
+    
+  }
+ .details{
+  align-items: center;
  }
+}
+
